@@ -54,12 +54,12 @@ Gromit은 하루하루의 커밋을 캐릭터의 먹이로 전환해 **성취감
 - Alamofire 기반 커스텀 네트워크 레이어 설계 전체 & 전체 API의 약 50% 연동
     <details>
     <summary>자세한 내용</summary>
-    처음에는 더 높은 추상화 수준을 기대하고 Moya를 도입했지만, 실제로 적용해보니 프로젝트 규모에 비해 보일러플레이트 코드가 늘어나 오히려 복잡도가 높아졌습니다. 이를 인식하고 Alamofire를 직접 감싼 커스텀 NetworkingClient 래퍼 클래스로 전환했습니다. URL 관리(ServiceURL enum), 타임아웃 설정, JSON 디코딩을 내부에서 일괄 처리하도록 설계해 각 ViewModel에서는 `NetworkingClient.shared.request(...)`만 호출하면 되는 구조를 마련했습니다. 덕분에 팀원들이 통신 로직을 신경 쓰지 않고 비즈니스 로직에만 집중할 수 있었습니다.
+    처음에는 더 높은 추상화 수준을 기대하고 Moya를 도입했지만, 실제로 적용해보니 프로젝트 규모에 비해 보일러플레이트 코드가 늘어나 오히려 복잡도가 높아졌습니다. 이를 인식하고 Alamofire를 직접 감싼 커스텀 NetworkingClient 래퍼 클래스로 전환했습니다. URL 관리(ServiceURL enum), 타임아웃 설정, JSON 디코딩을 내부에서 일괄 처리하도록 설계해 각 ViewModel에서는 NetworkingClient.shared.request(...)만 호출하면 되는 구조를 마련했습니다. 덕분에 팀원들이 통신 로직을 신경 쓰지 않고 비즈니스 로직에만 집중할 수 있었습니다.
   </details>
 - Combine을 활용한 MVVM 패턴 구현
   <details>
     <summary>자세한 내용</summary>
-    `@Published` + `onReceive` 패턴으로 ViewModel의 API 응답을 View에 전달하는 구조를 구현했습니다. API 결과를 OutputEvent enum으로 분리해 성공·실패·에러 케이스를 명확히 정의함으로써, View는 비즈니스 로직을 전혀 모르는 상태에서 이벤트만 받아 팝업과 화면 전환을 처리하도록 관심사를 분리했습니다.
+    @Published + onReceive 패턴으로 ViewModel의 API 응답을 View에 전달하는 구조를 구현했습니다. API 결과를 OutputEvent enum으로 분리해 성공·실패·에러 케이스를 명확히 정의함으로써, View는 비즈니스 로직을 전혀 모르는 상태에서 이벤트만 받아 팝업과 화면 전환을 처리하도록 관심사를 분리했습니다.
   </details>
 
 <br><br>

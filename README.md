@@ -1,15 +1,44 @@
+# 🐣 Gromit — 깃허브 커밋으로 키우는 나만의 다마고치
+
+> **Grow + Commit = Gromit** </br>
+> 깃허브 커밋을 먹이 삼아 캐릭터를 성장시키고, 같은 목표를 가진 사람들과 함께 챌린지를 통해 개발 습관을 만들어가는 iOS 앱
+
 <p align="center">
   <a href="https://apps.apple.com/kr/app/%EA%B7%B8%EB%A1%9C%EB%B0%8B/id6451416113" tabIndex="0">
     <img class="bn46" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="bn45"/>
   </a>
 </p>
 
-<p align="center">
-  <img src="https://private-user-images.githubusercontent.com/56381189/364624195-8ae4bb11-54c1-4447-9f02-08186873d323.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjU1MTEwOTAsIm5iZiI6MTcyNTUxMDc5MCwicGF0aCI6Ii81NjM4MTE4OS8zNjQ2MjQxOTUtOGFlNGJiMTEtNTRjMS00NDQ3LTlmMDItMDgxODY4NzNkMzIzLmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTA1VDA0MzMxMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWNjYmE4Y2UwZTQ2MDU5Njg0NTIxZDBmMmJlYmExYmFjZTU2NTEwOTlkNDAyOGRiYjVmMTUwNGYzMTZmMmI1ODYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.cD-2E8hrsU_gNspp6u6SNWVZ-7Ty4bu1aKfsG6KHLJk" align="center" width="32%">
-  <img src="https://private-user-images.githubusercontent.com/56381189/364624201-70bf2533-7975-4c8f-ba7f-87eb77e376fb.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjU1MTEwOTAsIm5iZiI6MTcyNTUxMDc5MCwicGF0aCI6Ii81NjM4MTE4OS8zNjQ2MjQyMDEtNzBiZjI1MzMtNzk3NS00YzhmLWJhN2YtODdlYjc3ZTM3NmZiLmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTA1VDA0MzMxMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTg5YmVjMjU0OWZmNzE5YTViOTNhNWVlZjc4ZDU1ZmIzNDAzMjQ2OWZkNGY2NjRiNDZkZmVlOWE3NDIxZDJhNzgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.m_ODqR_yuasgRAksRbcE_xZ2QwLeOLhi3QsSzf0T-aw" align="center" width="32%">
-</p>
 
-<p align="center">
-  <img src="https://private-user-images.githubusercontent.com/56381189/364624206-a7cf8768-5410-49a5-9f6a-775ff4b09e4b.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjU1MTEwOTAsIm5iZiI6MTcyNTUxMDc5MCwicGF0aCI6Ii81NjM4MTE4OS8zNjQ2MjQyMDYtYTdjZjg3NjgtNTQxMC00OWE1LTlmNmEtNzc1ZmY0YjA5ZTRiLmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTA1VDA0MzMxMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWIxMGEwYmM1ZWI4NTgzMzVlMGJlMmM4NmU5ZjNjNTRjNWIwNmFkMDY1N2JkZDg3N2EyZGNhYTU2OTI5ZmVhZjUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.Vr62cg0qbNk46OHztOLqAIAP9x08LTbBnebb8Awt5FI" align="center" width="32%">
-    <img src="https://private-user-images.githubusercontent.com/56381189/364624210-64e3e293-41a2-4b7a-9533-b004b1fefc05.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjU1MTEwOTAsIm5iZiI6MTcyNTUxMDc5MCwicGF0aCI6Ii81NjM4MTE4OS8zNjQ2MjQyMTAtNjRlM2UyOTMtNDFhMi00YjdhLTk1MzMtYjAwNGIxZmVmYzA1LmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTA1VDA0MzMxMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWJiY2YyZDczMjZmNzMyYmRkN2I5NGZiMjA4NWIwZTE5ZTI5ZjE0Njc5YTliOWZjZjUxYjZkZmY2Yzc2NDA0NGYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.qEH3NmSqal2q8MJjC9awqNKslnNDu27OVVa-ZC8S-5I" align="center" width="32%">
-</p>
+<br>
+
+## 📌 프로젝트 소개
+
+개발자라면 누구나 공감하는 **"깃허브 잔디 관리"**. 꾸준히 커밋하고 싶지만 동기 부여가 쉽지 않죠.
+
+Gromit은 하루하루의 커밋을 캐릭터의 먹이로 전환해 **성취감**을 만들고, 챌린지 기능으로 **같은 목표를 가진 사람들과 함께** 습관을 형성할 수 있도록 돕는 서비스입니다.
+
+- **UMC(University MakeUs Challenge) 3rd** 에서 기획·개발된 프로젝트
+- 팀 구성: iOS 3, 백엔드 3, 기획/디자인 1 (총 7인)
+- 역할: iOS Developer
+- 기간: 2023.01 - 2023.11 (약 10개월)
+- 주요 기술: SwiftUI, MVVM, Alamofire
+
+<br>
+
+## 📱 주요 기능
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/6cf6af6d-e639-4aa8-a005-b9d4a3852dba">
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/2b02ea0d-82ee-4443-b51d-fbedaa4fd234">
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/02beff07-c3b8-41f4-8372-81cf64d81623">
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/e36ce852-eab3-44c2-81c2-b9841d62e038">
+
+<br><br>
+
+## 📸 스크린샷
+| **메인 홈** | **홈 최종진화** | **컬렉션** |
+| :---: | :---: | :---: |
+| <img width="230" alt="Image" src="https://github.com/user-attachments/assets/554f1b1f-21aa-47e4-ab9a-4090e67090ee" /> | <img width="230" alt="Image" src="https://github.com/user-attachments/assets/3b7a5a56-b62e-46af-b234-66eba80d2866" /> | <img width="230" alt="Image" src="https://github.com/user-attachments/assets/d1303998-c669-419a-9dcd-b31cf42762cf" />
+| **참여 중 챌린지** | **챌린지 생성** | **설정** |
+| <img width="230" alt="Image" src="https://github.com/user-attachments/assets/3278e0db-2a98-460a-9027-00a09b15dec2" /> | <img width="230" alt="Image" src="https://github.com/user-attachments/assets/f1dce55a-0560-468e-90b3-bfb8273ba268" /> | <img width="230"  alt="Image" src="https://github.com/user-attachments/assets/74a457a1-f46e-4d2e-94e3-f6b75c0ab75f" />
+| **닉네임 변경** | **개발자 도구 45위** |
+| <img width="230" alt="Image" src="https://github.com/user-attachments/assets/89c2ce74-5698-4f41-8467-71c4d1c04abd" /> | <img width="230" alt="Image" src="https://github.com/user-attachments/assets/7efdd58e-f8ca-4a4a-b6d0-e99cfd30567f" />
